@@ -48,10 +48,11 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     font-family: "Sriracha";
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 footer {
+    font-size: 3vw;
     background-color: black;
     color: white;
     text-align: center;
