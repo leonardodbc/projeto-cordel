@@ -3,41 +3,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
-html {
-    height: 100%;
-}
-
-p {
-    font-size: 3vw;
+html, body {
+    background-color: rgb(56, 56, 56);
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    width: 100%;
     background-color: black;
+    color: white;
 }
 
-header h1 {
+header > h1 {
     font-family: "Passion One";
+    font-variant: small-caps;
     font-weight: normal;
-    color: white;
     text-align: center;
     padding-top: 50px;
-    font-size: 9vw;
+    font-size: 10vw;
 }
 
-header p {
-    font-family: Arial, Helvetica, sans-serif;
+header > p {
     font-size: 1em;
     padding-bottom: 40px;
-    color: white;
     text-align: center;
 }
 
-header a {
+header > p > a {
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -47,12 +43,16 @@ header a:hover {
     text-decoration: underline;
 }
 
-section > p {
-    padding: 40px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     font-family: "Sriracha";
+    font-size: 3vw;
 }
 
 footer {
+    font-size: 1.5em;
     background-color: black;
     color: white;
     text-align: center;
@@ -64,25 +64,27 @@ footer {
     color: black;
 }
 
-.img > p {
+.img {
+    background-color: aqua;
     color: white;
-    margin: 20px;
+    box-shadow: inset 6px 6px 13px 3px rgba(0, 0, 0, 0.350);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+.img > p {
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.400);
 }
 
 #img01 {
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-attachment: fixed;
 }
 
 #img02 {
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-attachment: fixed;
 }
